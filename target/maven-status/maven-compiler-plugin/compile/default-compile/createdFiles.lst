@@ -1,0 +1,17 @@
+com/example/mininetflix/entity/User.class
+com/example/mininetflix/service/UserService.class
+com/example/mininetflix/controller/FavoriteController.class
+com/example/mininetflix/repo/FavoriteRepository.class
+com/example/mininetflix/entity/Movie.class
+com/example/mininetflix/service/MovieService.class
+com/example/mininetflix/controller/MovieController.class
+com/example/mininetflix/controller/AuthController.class
+com/example/mininetflix/config/SecurityConfig.class
+com/example/mininetflix/dto/RegisterRequest.class
+com/example/mininetflix/service/JpaUserDetailsService.class
+com/example/mininetflix/repo/MovieRepository.class
+com/example/mininetflix/repo/GenreRepository.class
+com/example/mininetflix/repo/UserRepository.class
+com/example/mininetflix/entity/Favorite.class
+com/example/mininetflix/entity/Genre.class
+com/example/mininetflix/MiniNetflixApplication.class

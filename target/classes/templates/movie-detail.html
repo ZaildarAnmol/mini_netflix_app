@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${movie.title}">Movie Details</title>
+</head>
+<body>
+<h1 th:text="${movie.title}">Title</h1>
+<img th:src="@{${movie.posterUrl}}" width="300" alt="Poster">
+<p th:text="${movie.description}"></p>
+<p>Rating: <span th:text="${movie.rating}"></span></p>
+<p>Year: <span th:text="${movie.releaseYear}"></span></p>
+<form th:action="@{'/favorites/' + ${movie.id}}" method="post">
+    <button type="submit">+ Favorite</button>
+</form>
+<a href="/">Back</a>
+</body>
+</html>

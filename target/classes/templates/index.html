@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Netflix</title>
+</head>
+<body>
+<h1>Welcome to Mini Netflix</h1>
+
+<!-- Visible only when user is NOT logged in -->
+<div sec:authorize="isAnonymous()">
+    <p>You’re not logged in yet.</p>
+    <a th:href="@{/login}">Login</a> |
+    <a th:href="@{/register}">Register</a>
+</div>
+
+<!-- Visible only when user IS logged in -->
+<div sec:authorize="isAuthenticated()">
+    <p>Welcome, <span sec:authentication="name"></span>!</p>
+    <a th:href="@{/movies}">Browse Movies</a> |
+    <a th:href="@{/favorites}">My Favorites</a> |
+    <a th:href="@{/logout}">Logout</a>
+</div>
+
+<footer>
+    <p>&copy; 2025 Mini Netflix Project</p>
+</footer>
+</body>
+</html>

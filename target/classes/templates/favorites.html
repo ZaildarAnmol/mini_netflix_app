@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Favorites</title>
+</head>
+<body>
+<h1>Your Favorites</h1>
+<div th:each="movie : ${movies}">
+    <img th:src="@{${movie.posterUrl}}" width="120" alt="Poster"/>
+    <h3 th:text="${movie.title}"></h3>
+    <form th:action="@{'/favorites/' + ${movie.id} + '/remove'}" method="post">
+        <button type="submit">Remove</button>
+    </form>
+</div>
+
+<p><a href="/">Back</a></p>
+</body>
+</html>

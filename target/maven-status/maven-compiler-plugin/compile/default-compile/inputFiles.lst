@@ -1,0 +1,17 @@
+/Users/anmolsingh/Downloads/mininetflix_project/src/main/java/com/example/mininetflix/MiniNetflixApplication.java
+/Users/anmolsingh/Downloads/mininetflix_project/src/main/java/com/example/mininetflix/config/SecurityConfig.java
+/Users/anmolsingh/Downloads/mininetflix_project/src/main/java/com/example/mininetflix/controller/AuthController.java
+/Users/anmolsingh/Downloads/mininetflix_project/src/main/java/com/example/mininetflix/controller/FavoriteController.java
+/Users/anmolsingh/Downloads/mininetflix_project/src/main/java/com/example/mininetflix/controller/MovieController.java
+/Users/anmolsingh/Downloads/mininetflix_project/src/main/java/com/example/mininetflix/dto/RegisterRequest.java
+/Users/anmolsingh/Downloads/mininetflix_project/src/main/java/com/example/mininetflix/entity/Favorite.java
+/Users/anmolsingh/Downloads/mininetflix_project/src/main/java/com/example/mininetflix/entity/Genre.java
+/Users/anmolsingh/Downloads/mininetflix_project/src/main/java/com/example/mininetflix/entity/Movie.java
+/Users/anmolsingh/Downloads/mininetflix_project/src/main/java/com/example/mininetflix/entity/User.java
+/Users/anmolsingh/Downloads/mininetflix_project/src/main/java/com/example/mininetflix/repo/FavoriteRepository.java
+/Users/anmolsingh/Downloads/mininetflix_project/src/main/java/com/example/mininetflix/repo/GenreRepository.java
+/Users/anmolsingh/Downloads/mininetflix_project/src/main/java/com/example/mininetflix/repo/MovieRepository.java
+/Users/anmolsingh/Downloads/mininetflix_project/src/main/java/com/example/mininetflix/repo/UserRepository.java
+/Users/anmolsingh/Downloads/mininetflix_project/src/main/java/com/example/mininetflix/service/JpaUserDetailsService.java
+/Users/anmolsingh/Downloads/mininetflix_project/src/main/java/com/example/mininetflix/service/MovieService.java
+/Users/anmolsingh/Downloads/mininetflix_project/src/main/java/com/example/mininetflix/service/UserService.java
