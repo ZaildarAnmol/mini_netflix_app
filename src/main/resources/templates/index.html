@@ -4,27 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Mini Netflix</title>
+    <link rel="stylesheet" href="/css/styles.css" />
 </head>
+
+<script src="/js/app.js" defer></script>
+
 <body>
-<h1>Welcome to Mini Netflix</h1>
+<div id="app">
+    <header class="nav">
+        <div class="nav__logo">mini<span>Netflix</span></div>
+        <nav class="nav__links">
+            <a href="#" class="active">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">Series</a>
+            <a href="#">My List</a>
+        </nav>
+        <div class="nav__actions">
+            <input id="searchInput" type="text" placeholder="Search" />
+            <button id="themeToggle" aria-label="Toggle theme">🌓</button>
+        </div>
+    </header>
 
-<!-- Visible only when user is NOT logged in -->
-<div sec:authorize="isAnonymous()">
-    <p>You’re not logged in yet.</p>
-    <a th:href="@{/login}">Login</a> |
-    <a th:href="@{/register}">Register</a>
+    <section id="hero" class="hero"></section>
+
+    <main id="rows">
+        <!-- JS will inject multiple rows (carousels) here -->
+    </main>
+
+    <footer class="footer">© 2025 miniNetflix • Built by Anmol</footer>
 </div>
-
-<!-- Visible only when user IS logged in -->
-<div sec:authorize="isAuthenticated()">
-    <p>Welcome, <span sec:authentication="name"></span>!</p>
-    <a th:href="@{/movies}">Browse Movies</a> |
-    <a th:href="@{/favorites}">My Favorites</a> |
-    <a th:href="@{/logout}">Logout</a>
-</div>
-
-<footer>
-    <p>&copy; 2025 Mini Netflix Project</p>
-</footer>
 </body>
 </html>
